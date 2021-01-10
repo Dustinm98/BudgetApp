@@ -110,8 +110,7 @@ total.splice(parseInt(id), 1);
 window.localStorage.setItem("total",JSON.stringify(total));
 for(var a=parseInt(id);a<total.length;a++){ 
 var old_id = String("id" + parseInt(a+1));
-// old id is 0 + 1. =1^
-// new id is 0. all id's after deleted id are decremented by 1.
+
 var new_id = String("id" + parseInt(a));
 console.log(new_id);
 document.getElementById(old_id).id = new_id;
